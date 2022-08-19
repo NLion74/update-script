@@ -16,13 +16,13 @@ apt-get update
 echo ""
 
 echo -e "step 4: ${GREEN}upgrade packages${NOCOLOR}"
-apt-get upgrade
+apt-get upgrade -y
 echo ""
 
-echo -e "step 6: ${GREEN}remove unused packages${NOCOLOR}"
+echo -e "step 5: ${GREEN}remove unused packages${NOCOLOR}"
 apt-get --purge autoremove
 echo ""
 
-echo -e "step 7: ${GREEN}clean up${NOCOLOR}"
+echo -e "step 6: ${GREEN}clean up${NOCOLOR}"
 apt-get autoclean
 echo ""
